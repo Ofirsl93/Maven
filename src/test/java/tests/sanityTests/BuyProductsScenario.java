@@ -69,8 +69,8 @@ public static void main(String[] args) {
         String currentURL4 = driver.getCurrentUrl();
         Assert.assertEquals(currentURL4,"https://www.saucedemo.com/checkout-complete.html", ": URL does not match");
 
-        WebElement checkoutcomplete = driver.findElement(By.cssSelector("#header_container > div.header_secondary_container > span"));
-        String complete = checkoutcomplete.getText();
+        WebElement checkoutComplete = driver.findElement(By.cssSelector("#header_container > div.header_secondary_container > span"));
+        String complete = checkoutComplete.getText();
         Assert.assertEquals(complete, "Checkout: Complete!", "TEXT does not match");
 
         WebElement thankYou = driver.findElement(By.cssSelector("#checkout_complete_container > h2"));
@@ -80,7 +80,7 @@ public static void main(String[] args) {
         WebElement yourOrder = driver.findElement(By.cssSelector("#checkout_complete_container > div"));
         String pony = yourOrder.getText();
         Assert.assertEquals(pony,"Your order has been dispatched, and will arrive just as fast as the pony can get there!", "TEXT does not match");
-        driver.quit();
 
+        driver.quit();
     }
 }
