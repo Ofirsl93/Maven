@@ -9,6 +9,8 @@ import java.util.List;
 import org.testng.Assert;
 
 public class BuyProductsScenario {
+
+
 public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
