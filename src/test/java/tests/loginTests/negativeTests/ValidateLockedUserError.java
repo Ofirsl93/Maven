@@ -14,7 +14,7 @@ public class ValidateLockedUserError {
       validateLockedUsers(driver, "", "secret_sauce", "Epic sadface: Username is required");
       validateLockedUsers(driver, "standard_user", "", "Epic sadface: Password is required");
       validateLockedUsers(driver, "", "", "Epic sadface: Username is required");
-       driver.quit();
+      driver.quit();
 }
      public static void validateLockedUsers(WebDriver driver,String username ,String password, String expectedErrorMessage){
        driver.get("https://www.saucedemo.com");
